@@ -1,0 +1,11 @@
+<p style="text-align:center">This window will close automatically within <span id="counter">3</span> second(s).</p>
+<script type="text/javascript">
+	function countdown() {
+		var i = document.getElementById('counter');
+			i.innerHTML = parseInt(i.innerHTML)-1;
+	if (parseInt(i.innerHTML)<=0) {
+		window.close();
+	}
+}
+setInterval(function(){ countdown(); },1000);
+</script>
